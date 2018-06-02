@@ -1,0 +1,81 @@
+﻿@using Week6_Capstone_TaskListRevisted.Controllers
+
+@{
+    ViewBag.Title = "Welcome";
+}
+
+<style>
+        form {
+            border: 1px solid black;
+        }
+
+        form {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 2px solid grey;
+            background-color: aliceblue;
+            color: black;
+            border: 1px solid black;
+            font-size: 22px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+</style>
+
+<center>
+    <h1>TASK MANAGEMENT USER ACCOUNT REGISTRATION</h1><br /><br />
+
+
+    <h3>Please complete form to create an user account. Thank you in advance!</h3><br />
+</center>
+
+@*this form will take input from the user and send it to my Welcome action result*@
+
+
+<form action="/Home/Login" class="form1" onsubmit="return validName1(), validName2(), validPhone()">
+
+    <input type="text" id="first" name="firstName" placeholder="First Name" />
+
+    <input type="text" id="last" name="lastName" placeholder="Last Name" /><br /><br />
+
+    <p>Please select gender:</p>
+    Male: <input name="gender" type="radio" id="myRadio">
+    Female: <input name="gender" type="radio" id="myRadio"><br /><br />
+
+    <input type="text" name="emailAddress" placeholder="Email Address" /><br /><br />
+
+    <input type="text" name="passWord1" placeholder="Create Password" />
+    <input type="text" name="passWord2" placeholder="Re-enter Password" /><br /><br /><br />
+   
+    <input type="submit" value="Submit" class="btn btn-primary btn-lg" /><br /><br />
+</form>
+
+
+<script>
+
+    function validName1() {
+        var letters1 = /^[A-Za-z]+$/;
+        var first = document.getElementById("first").value;
+        if (letters1.test(first)) {
+            return true;
+        }
+        else {
+            alert("INVALID INPUT. Only alpha characters permitted.");
+            return false;
+        }
+    }
+</script>
+
+<script>
+    function validName2() {
+        var letters2 = /^[A-Za-z]+$/;
+        var last = document.getElementById("last").value;
+        if (letters2.test(last)) {
+            return true;
+        }
+        else {
+            alert("INVALID INPUT. Only alpha characters permitted.");
+            return false;
+        }
+    }
+</script>
+
