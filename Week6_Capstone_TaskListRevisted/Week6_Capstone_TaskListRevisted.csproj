@@ -161,6 +161,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Employee.cs">
+      <DependentUpon>TaskListEntities.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Task.cs">
       <DependentUpon>TaskListEntities.tt</DependentUpon>
     </Compile>
@@ -178,9 +181,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TaskListEntities.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\User.cs">
-      <DependentUpon>TaskListEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -247,6 +247,7 @@
     <Content Include="Views\Tasks\Index.cshtml" />
     <Content Include="Views\Home\Welcome.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\TaskMgrLogin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -42,16 +42,25 @@ namespace Week6_Capstone_TaskListRevisted.Controllers
             return View();
         }
 
-        public ActionResult Employees
-            (string firstName = "Whatever1", string lastName = "Whatever2",
-            string email = "none@noone.com", int userID = 000)
+        public ActionResult TaskMgrLogin()
         {
-            ViewBag.FirstName = firstName;
-            ViewBag.LastName = lastName;
-            ViewBag.Email = email;
-            ViewBag.UserID = userID;
             return View();
         }
+
+        public ActionResult Employees()
+        {
+            return View();
+        }
+
+        //    (string firstName = "Whatever1", string lastName = "Whatever2",
+        //    string email = "none@noone.com", int userID = 000)
+        //{
+        //    ViewBag.FirstName = firstName;
+        //    ViewBag.LastName = lastName;
+        //    ViewBag.Email = email;
+        //    ViewBag.UserID = userID;
+        //    return View();
+        //}
 
        
 

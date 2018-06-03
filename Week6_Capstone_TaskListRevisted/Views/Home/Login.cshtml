@@ -8,7 +8,22 @@
     <div class="alert alert-success">
         <h1><strong>Success!</strong></h1>
 
-        <h4>Thank you, @ViewBag.First @ViewBag.Last, your registration was successfully processed.</h4>
-    </div><br /><br />
+        <h4>Thank you, @ViewBag.FirstName @ViewBag.LastName, your registration was successfully processed.</h4>
+    </div><br /><br /><br /><br />
+
+    <p>@ViewBag.First, your Task Management User Account Login information is:</p>
+    <p>UserID:      @ViewBag.UserID</p><br />
+    <p>Password:    @ViewBag.Password1</p><br />
+
+    <p>
+        <strong>
+            Please use your UserID, along with your Password, to login to your
+            Task Management User Account.
+        </strong>
+    </p>
+
+    <p>
+        <a href="/Home/TaskMgrLogin">Task Management User Login&raquo;</a>
+    </p>
 
 </center>

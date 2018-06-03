@@ -19,5 +19,8 @@ namespace Week6_Capstone_TaskListRevisted.Models
         public int Status { get; set; }
         public string Email { get; set; }
         public int TaskID { get; set; }
+        public int UserID { get; set; }
+    
+        public virtual Employee Employee { get; set; }
     }
 }

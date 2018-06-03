@@ -26,6 +26,6 @@ namespace Week6_Capstone_TaskListRevisted.Models
         }
     
         public virtual DbSet<Task> Tasks { get; set; }
-        public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<Employee> Employees { get; set; }
     }
 }

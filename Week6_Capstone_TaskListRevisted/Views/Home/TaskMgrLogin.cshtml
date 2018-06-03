@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewBag.Title = "TaskMgrLogin";
+}
+
+<style>
+    form {
+        border: 1px solid black;
+    }
+
+    form {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 2px solid grey;
+        background-color: aliceblue;
+        color: black;
+        border: 1px solid black;
+        font-size: 22px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    form {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+</style>
+
+<center>
+    <br /><br /><br /><br />
+    <h3>Please login to CREATE or EDIT your individual Task Management List:</h3>
+    <br /><br />
+    <div>
+
+        <form action="/Home/TaskMgrList" class="form1" onsubmit="return (validLoginAdminName1() && validAdminPW1())">
+            <input type="text" name="UserID" placeholder="User ID" />
+            <input type="text" name="Password" placeholder="Password" /><br /><br />
+
+            <input type="submit" value="Submit" class="btn btn-primary btn-lg" /><br /><br />
+        </form>
+    </div>
+</center>
+
+<script>
+
+    function validLogin() {
+        var validLogin1 = @ViewBag.UserID;
+        var solidName = document.getElementById("userID").value;
+        if (validLogin.test(validLogin1)) {
+            return true;
+        }
+        else {
+            alert("INVALID INPUT. Try again.");
+            return false;
+        }
+    }
+</script>
+
+<script>
+
+    function validPW() {
+        var validPW1 = @ViewBag.Password;
+        var solidPW = document.getElementById("password").value;
+        if (solidPW.test(validPW)) {
+            return true;
+        }
+        else {
+            alert("INVALID INPUT. Try again.");
+            return false;
+        }
+    }
+</script>
+
+
