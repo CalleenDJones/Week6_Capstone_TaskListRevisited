@@ -8,8 +8,6 @@ namespace Week6_Capstone_TaskListRevisted.Controllers
 {
     public class HomeController : Controller
     {
-       
-
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -34,7 +32,7 @@ namespace Week6_Capstone_TaskListRevisted.Controllers
             return View();
         }
 
-        public ActionResult Tasks
+        public ActionResult TaskListCreator
            (string description = "descrbe in words", int duedate = 12/31/2018, 
             int status = 2, string email = "none@noone.com", int taskID = 0000, 
             int userID = 9999)
@@ -69,8 +67,8 @@ namespace Week6_Capstone_TaskListRevisted.Controllers
             string passWord1 = "password", string passWord2 = "password")
         {
             //ActionResults
-            ViewBag.First = firstName;
-            ViewBag.Last = lastName;
+            ViewBag.FirstName = firstName;
+            ViewBag.LastName = lastName;
             ViewBag.Email = emailAddress;
             ViewBag.Password1 = passWord1;
             ViewBag.Password2 = passWord2;

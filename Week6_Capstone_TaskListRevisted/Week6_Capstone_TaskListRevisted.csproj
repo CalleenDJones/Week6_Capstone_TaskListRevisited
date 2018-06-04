@@ -248,6 +248,7 @@
     <Content Include="Views\Home\Welcome.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Home\TaskMgrLogin.cshtml" />
+    <Content Include="Views\Home\TaskListCreator.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
